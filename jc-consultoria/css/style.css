@@ -1,0 +1,497 @@
+/* Estilos Gerais */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+  
+p{
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.btn {
+    border: 3px solid #5e1224;
+    padding: 10px 30px;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: #5e1224;
+    background-color: white;
+}
+  
+.btn:hover {
+    color: #b10c0c;
+    border-color: #b10c0c;
+}
+
+.titulo-de-secao{
+    text-align: center;
+    color: #5e1224;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.titulo-de-secao::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #5e1224;
+    margin: 8px auto;
+}
+  
+/*Menu*/
+
+.menu-bg {
+    width: 100%;
+	background: #5e1224;
+    padding: 0;
+}
+
+.menu {
+	max-width: 960px;
+    max-height: 100px;
+	margin: 0 auto;
+	padding: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+    align-content: center;
+}
+
+.menu a {
+	color: white;
+}
+
+.menu-logo a {
+	font-size: 2.25em;
+	font-weight: bold;
+	margin: 0 10px;
+}
+
+.menu-nav ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.menu-nav a {
+	font-size: 1.25em;
+	display: block;
+	padding: 10px;
+}
+
+.menu-nav a:hover{
+	color: #000;
+}
+
+/* Introdução */
+
+.introducao{
+    width: 100%;
+    height: 400px;
+    padding-top: 100px;
+    text-align: center;
+    background: url("../img/intro/aperto2.png") no-repeat;
+    background-size: cover;
+}
+
+.introducao h1{
+    text-transform: uppercase;
+    font-size: 48px;
+    color: #000;
+    font-weight: bold;
+    margin: auto;
+}
+
+.quote-externo {
+    text-align: center;
+    max-width: 320px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    color: #000;
+}
+  
+.quote-externo p {
+    font-style: italic;
+}
+  
+.quote-externo p:before,
+.quote-externo p:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #5e1224;
+    margin: 14px auto 10px auto;
+  }
+  
+.quote-externo cite {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+
+
+/* Diferenciais */
+
+.diferenciais{
+    margin: 40px auto 60px auto;
+}
+
+/* Lista dos diferenciais */
+
+.lista-diferenciais{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding-right: 40px;
+    margin: auto;
+}
+
+.lista-diferenciais li{
+    width: 200px;
+    padding: 30px;
+    align-self: flex-start;
+    border: 3px solid #a9a9a9;
+    height: 180px;
+}
+
+.lista-diferenciais li h3 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 20px;
+    color: #000;
+}
+
+.lista-diferenciais li p {
+    text-align: center;
+    color: #5e1224;
+}
+
+.lista-diferenciais li h3:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 6px auto;
+}
+
+/* Botão */
+
+.diferenciais .call .btn{
+    background: white;
+}
+
+
+/* Portfolio */
+
+/* Container */
+.portfolio {
+    width: 100%;
+    padding: 40px 0;
+    background-image: linear-gradient(to bottom, #ffffff, #eeeeee, #dedede, #cecece, #bebebe, #bebebe, #bebebe, #bebebe, #cecece, #dedede, #eeeeee, #ffffff);
+}
+
+/* Titulo da seção */
+.portfolio .titulo-de-secao {
+    margin-bottom: 40px;
+}
+
+/* Lista de imagens */
+.lista-portfolio{
+    padding: 20px 10px 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+
+/* Chamada */
+
+.call {
+    padding-top: 40px;
+    text-align: center;
+    clear: both;
+  }
+  
+.call p {
+    margin-bottom: 20px;
+}
+
+.portfolio .call p {
+    color: #000;
+}
+
+
+/* Depoimentos */
+
+.depoimentos{
+    margin: 30px auto;
+}
+
+.slide{
+    margin: 0 auto;
+    padding: 0px;
+    position: relative;
+}
+
+.depoimento-estrutura{
+    width: 745px;
+    height: 200px;
+    text-align: center;
+    padding: 0;
+    margin: 10px auto 30px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+}
+
+.depoimento-estrutura p{
+    font-style: italic;
+    width: 342.5px;
+}
+
+.depoimento-estrutura cite{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    color: #5e1224;
+    text-align: center;
+}
+
+.depoimento-estrutura img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #a9a9a9;
+    object-fit: cover;
+}
+
+.cliente{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 342.5px;
+}
+
+
+/* Footer */
+
+.footer-itens{
+    width: 100%;
+    background: #a9a9a9;
+    color: #5e1224;
+}
+
+.lista-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding-right: 40px;
+    margin: auto;
+}
+
+.lista-footer h3{
+    font-size: 18px;
+    line-height: 25px;
+    color: #5e1224;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.lista-footer li{
+    width: 200px;
+    padding: 30px;
+    align-self: flex-start;
+}
+
+/* Nossa Historia */
+
+.footer-historia p{
+    text-align: center;
+    color: #fff;
+}
+
+/* Contato */
+
+.footer-contato ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-contato ul li{
+    padding: 0;
+}
+
+/* Redes Sociais */
+
+.redes-icones{
+    display: flex;
+    flex-direction: row;
+    padding: 0 35px 0 0;
+    justify-content: center;
+}
+
+.redes-icones li img{
+    border: 3px solid #5e1224;
+    display: block;
+    padding: 15px;
+}
+
+/* Copyright */
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    background: #5e1224;
+    color: white;
+}
+
+/*javascript*/
+.js [data-slide] {
+    position: relative;
+  }
+  .js [data-slide] > * {
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+  }
+  .js [data-slide] > .active {
+    position: relative;
+    opacity: 1;
+    transition: opacity 500ms;
+    z-index: 1;
+  }
+  
+  .js [data-slide-nav] {
+    display: block;
+    text-align: center;
+    z-index: 9900;
+    position: sticky;
+  }
+  
+  .js [data-slide-nav] button {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 4px;
+    border: none;
+    padding-top: 0px;
+    border-radius: 6px;
+    text-indent: -99px;
+    overflow: hidden;
+    background: #a9a9a9;
+  }
+  
+  .js [data-slide-nav] button.active {
+    background: #5e1224;
+  }
+  
+  .js[data-anime] {
+    opacity: 0;
+  }
+  .js .fadeInDown {
+    transform: translate3d(0, -20px, 0);
+  }
+  .js .anime {
+    opacity: 1;
+    transform: none;
+    transition: opacity 800ms, transform 800ms;
+  }
+
+/* Tablet */
+@media screen and (max-width: 768px){
+    /* Gerais */
+    p{
+        font-size: 17px;
+    }
+    cite{
+        font-size: 17px;
+    }
+    .titulo-de-secao{
+        font-size: 27px;
+    }
+    /* Diferenciais */
+    .lista-diferenciais li h3{
+        font-size: 21px;
+    }
+    /* Footer */
+    .lista-footer h3{
+        font-size: 20px;
+    }
+    .footer-contato ul li{
+        font-size: 20px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px){
+    /* Gerais */
+    p{
+        font-size: 20px;
+    }
+    cite{
+        font-size: 20px;
+    }
+    .titulo-de-secao{
+        font-size: 30x;
+    }
+    /* Diferenciais */
+    .lista-diferenciais{
+        flex-direction: column;
+    }
+    .lista-diferenciais li h3{
+        font-size: 23px;
+    }
+    .lista-diferenciais li{
+        align-self: center;
+    }
+    /* Footer */
+    .lista-footer h3{
+        font-size: 20px;
+    }
+    .footer-contato ul li{
+        font-size: 20px;
+    }
+}

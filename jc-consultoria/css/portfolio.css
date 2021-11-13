@@ -1,0 +1,113 @@
+/* Servicos */
+
+.servicos{
+    background: linear-gradient(180deg, rgba(169,169,169,1) 5%, rgba(255,255,255,1) 100%);
+    padding: 10px 62px 60px 62px;
+}
+
+/* Titulo da seção */
+
+.servicos h1 {
+    text-align: center;
+    color: #000;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.servicos h1:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #5e1224;
+    margin: 8px auto;
+}
+
+/* Lista de Serviços */
+
+.subtitulo{
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 20px;
+    color: #5e1224;
+}
+
+.texto{
+    text-align: center;
+    padding: 0 100px;
+}
+
+.servico-estrutura{
+    margin: 20px auto 30px auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #000;
+}
+
+.servico-estrutura img{
+    height: 300px;
+    width: 450px;
+    display: block;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.js [data-slide-nav] button {
+    background: white;
+}
+
+.js[data-anime] {
+    opacity: 0;
+}
+.js .fadeInDown {
+    transform: translate3d(0, -20px, 0);
+}
+
+.js .anime {
+    opacity: 1;
+    transform: none;
+    transition: opacity 800ms, transform 800ms;
+}
+
+/* Footer */
+.footer-itens{
+    background: white;
+}
+
+/* Nossa Historia */
+
+.footer-historia p{
+    color: #000;
+}
+
+/* Contato */
+
+.footer-contato ul{
+    color: #000;
+    text-align: center;
+}
+
+
+/* Tablet */
+@media screen and (max-width: 768px){
+    .subtitulo{
+        font-size: 21px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px){
+    .subtitulo{
+        font-size: 24px;
+    }
+}
